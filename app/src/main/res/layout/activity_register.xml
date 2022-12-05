@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/EditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto_bold_font"
+        android:text="@string/accountRegister"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RegUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="@string/account_userName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfilePersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextProfilePersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextProfilePersonName" />
+
+    <EditText
+        android:id="@+id/editTextProfilePersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Please input username..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTitle" />
+
+    <TextView
+        android:id="@+id/RegEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="@string/account_Email"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfileEmail"
+        app:layout_constraintEnd_toStartOf="@+id/editTextProfileEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextProfileEmail" />
+
+    <EditText
+        android:id="@+id/editTextProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Please input Email..."
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfilePersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfilePersonName" />
+
+    <TextView
+        android:id="@+id/RegPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="@string/account_Password"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfilePassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextProfilePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextProfilePassword"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/editTextProfilePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your password..."
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileEmail" />
+
+    <EditText
+        android:id="@+id/editTextProfileCheckPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your password again..."
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfilePassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfilePassword" />
+
+    <TextView
+        android:id="@+id/RegCheckPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="@string/account_checked_Password"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProfileCheckPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextProfileCheckPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextProfileCheckPassword"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <Button
+        android:id="@+id/RegBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:height="50dip"
+        android:backgroundTint="#FF9800"
+        android:text="@string/Create_Account_btn"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileCheckPassword" />
+
+    <TextView
+        android:id="@+id/ChangeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="@string/Register_ClickMe"
+        android:textColor="#419FEA"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/RegBtn"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/RegBtn"
+        app:layout_constraintTop_toBottomOf="@+id/RegBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

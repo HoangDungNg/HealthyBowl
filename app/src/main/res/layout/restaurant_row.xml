@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restaurant_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res_add"
+        app:srcCompat="@drawable/line_break" />
+
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:width="100dp"
+        android:fontFamily="@font/roboto_bold_font"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/res_img"
+        app:layout_constraintStart_toStartOf="@+id/res_img"
+        app:layout_constraintTop_toTopOf="@+id/res_img" />
+
+    <ImageView
+        android:id="@+id/res_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/cateFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/res_img"
+        app:layout_constraintEnd_toEndOf="@+id/res_img"
+        app:layout_constraintStart_toEndOf="@+id/res_name"
+        app:layout_constraintTop_toTopOf="@+id/res_img" />
+
+    <TextView
+        android:id="@+id/res_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:width="380dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="Phone No :"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/res_intro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res_intro" />
+
+    <TextView
+        android:id="@+id/res_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="Address :"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/res_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:width="200dp"
+        android:fontFamily="@font/roboto_condensed_font"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
